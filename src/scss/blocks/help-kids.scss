@@ -1,0 +1,115 @@
+.help-kids {
+    position: relative;
+    margin-bottom: 164px;
+    padding-top: 220px;
+    // background-image: url("../images/svg/index-med.svg");
+    // background-repeat: no-repeat;
+    // background-position: left top;
+    // background-size: 890px auto;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 893px;
+        height: 606px;
+        right: 54%;
+        top: 0;
+        background-image: url("../images/svg/index-med.svg");
+        background-size: cover;
+        @media (max-width: 767px) {
+            background-image: url("../images/svg/index-med-tablet.svg");
+            background-size: cover;
+            width: 769px;
+            height: 230px;
+            right: 50%;
+            transform: translateX(50%);
+            background-size: cover;
+        }
+        @media (max-width: 519px) {
+            width: 346px;
+            height: 235px;
+            background-image: url(../images/svg/index-med-mobile.svg);
+            left: -80px;
+            transform: none;
+            right: auto;
+        }
+    }
+    @media (max-width: 1024px) {
+        padding-top: 250px;
+        margin-bottom: 137px;
+    }
+    @media (max-width: 767px) {
+        order: 3;
+        padding-top: 245px;
+        margin-bottom: 60px;
+    }
+}
+
+.help-kids__wrapper {
+    position: relative;
+    max-width: 570px;
+    width: 100%;
+    margin-left: auto;
+    padding-bottom: 162px;
+    h1 {
+        font-size: 45px;
+        font-family: $font-add;
+        font-weight: 400;
+        margin-bottom: 20px;
+        @media (max-width: 767px) {
+            font-size: 26px;
+            max-width: 175px;
+            margin-bottom: 14px;
+        }
+    }
+    p.text {
+        font-weight: 300;
+        @media (max-width: 767px) {
+            font-size: 15px;
+        }
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        width: 111px;
+        height: 187px;
+        background-image: url("../images/svg/sharik-yellow-index.svg");
+        right: 0;
+        top: -170px;
+        background-size: cover;
+        @media (max-width: 1024px) {
+            width: 84px;
+            height: 140px;
+            right: 63px;
+            top: -140px;
+        }
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        width: 145px;
+        height: 210px;
+        background-image: url("../images/svg/sharik-red-index.svg");
+        bottom: -100px;
+        left: 0;
+        background-size: cover;
+        @media (max-width: 1024px) {
+            width: 89px;
+            height: 129px;
+            bottom: -66px;
+            left: -91px;
+        }
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+    @media (max-width: 1024px) {
+        max-width: 497px;
+    }
+    @media (max-width: 767px) {
+        padding-bottom: 0;
+    }
+}

@@ -1,0 +1,94 @@
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	outline: none;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+main {
+	flex: 1 0 auto;
+	// width: 1920px;
+	// position: relative;
+	// left: 50%;
+	// transform: translateX(-50%);
+	
+}
+
+footer {
+	flex-shrink: 0;
+}
+
+body {
+	font-family: $font-base;
+	color: $color-text;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.2;
+	display: flex;
+	flex-direction: column;
+	// height: 100vh;
+	overflow-x: hidden;
+	@media (max-width: 767px) {
+		font-size: 15px;
+	}
+}
+
+.container {
+	position: relative;
+	max-width: 1200px;
+	width: 100%;
+	padding: 0 15px;
+	margin: 0 auto;
+	@media(max-width: 767px) {
+		max-width: 320px;
+		// padding: 0;
+	}
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+	padding: 0;
+	margin: 0;
+}
+
+ul,
+ol,
+li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding: 0 !important;
+	border: 0 !important;
+	height: 1px !important;
+	width: 1px !important;
+	overflow: hidden;
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: block;
+}

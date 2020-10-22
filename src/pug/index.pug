@@ -1,0 +1,124 @@
+doctype html
+html(lang="ru")
+	head
+		include modules/head.pug
+	body
+		//- include modules/header.pug
+		header.index-header
+			.container
+				.index-header__wrapper
+					picture.logo
+						img(src="images/svg/logo.svg" alt="")
+					a(href="") Основной сайт
+				.index-header__content
+					h1.title Подарок
+					p.text Во время новогодних праздников мы все думаем о подарках. Подарите друзьям особую открытку, а детям надежду на выздоровление
+					a(href="") Сделать подарок
+		main.index-wrapper
+			section.main-content.help-kids
+				.container
+					.help-kids__wrapper
+						h1.title Проект <br> «Помощь детям в клиниках» 
+						p.text Помощь детям в клиниках. Это основной проект нашего фонда. У нас налажено сотрудничество и заключены договоры с целым рядом клиник, как столичных, так и региональных. И на поступающие пожертвования наш фонд покупает лекарства, расходные материалы, реактивы или медицинское оборудование для всей клиники или ее отделения.
+			section.main-content.slogan
+				.container
+					h1.title Фонд «Подари жизнь» существует, чтобы помогать. <br> Врачам - лечить, детям - лечиться !
+			section.main-content.actions
+				h1.visually-hidden Действия
+				.container
+					ul
+						li
+							span.picture 1
+							h2 Выберите подарок для детей
+							p.text Вы можете выбрать одну из позиций, которая поможет детям в лечении
+						li
+							span.picture 2
+							h2 Выберите открытку для друга
+							p.text Открытку можно скачать, отправить на электронный адрес себе или другу
+						li
+							span.picture 3
+							h2 Сделайте перевод
+							p.text Отправить перевод легко и быстро с помощью банковской карты, apple pay или google pay
+
+			section.main-content.gifts
+				.container
+					.gifts__wrapper
+						h1.title Подарки для детей
+						ul.gifts__list
+							li.item
+								picture
+									img(src="images/svg/gift1.png" alt="")
+								span.name Три таблетки
+								span.price 1 500 ₽
+							li.item
+								picture
+									img(src="images/svg/gift2.png" alt="")
+								span.name Расходка
+								span.price 700 ₽
+							li.item
+								picture
+									img(src="images/svg/gift3.png" alt="")
+								span.name Лечебное питание
+								span.price 500 ₽
+							li.item
+								picture
+									img(src="images/svg/gift4.png" alt="")
+								span.name Анализы
+								span.price 2 000 ₽
+							li.item
+								picture
+									img(src="images/svg/gift5.png" alt="")
+								span.name Другие таблетки
+								span.price 2 500 ₽
+							li.item
+								picture
+									img(src="images/svg/gift6.png" alt="")
+								span.name И еще таблетки
+								span.price 5 000 ₽
+						.down(hidden)
+							ul.gifts__list
+								li.item
+									picture
+										img(src="images/svg/gift1.png" alt="")
+									span.name Три таблетки
+									span.price 1 500 ₽
+								li.item
+									picture
+										img(src="images/svg/gift2.png" alt="")
+									span.name Расходка
+									span.price 700 ₽
+								li.item
+									picture
+										img(src="images/svg/gift3.png" alt="")
+									span.name Лечебное питание
+									span.price 500 ₽
+						a#show-more Смотреть все
+
+		footer.index-footer
+			.container
+				h1.title В<i class="br"></i> <span class="square1">2</span><span class="square2">0</span><span class="square1">2</span><span class="square2">0</span> году <br> мы помогли<i class="br"></i> <span class="square1">1</span><span class="square2">0</span><span class="square1">0</span><span class="square2">0</span><span class="square1">0</span><i class="br"></i> детям
+				.index-footer__content
+					p Благотворительный фонд «Подари жизнь», 119048, г.Москва, ул.Доватора, д.13,<i class="br"></i> подъезд 2А<i class="br"></i>
+					p <a href="email:donate@podari-zhizn.ru">donate@podari-zhizn.ru</a>, <i class="br"></i><a href="tek:+74959953-05">+7 (495) 995-31-05</a>,  <a href="tel:+74959953106">+7 (495) 995-31-05</a>
+				.index-footer__bottom
+					ul.social
+						li.fb
+							a(href="")
+								img(src="images/svg/social-fb.svg" alt="")
+						li.tw
+							a(href="")
+								img(src="images/svg/social-tw.svg" alt="")
+						li.inst
+							a(href="")
+								img(src="images/svg/social-inst.svg" alt="")
+					a(href="" hidden).link Основной сайт
+
+
+
+
+
+
+
+
+		//- include modules/menu-mobile.pug
+		include modules/script.pug

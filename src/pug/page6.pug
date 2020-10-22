@@ -1,0 +1,50 @@
+doctype html
+html(lang="ru")
+    head
+        include modules/head.pug
+    body
+        include modules/header.pug
+
+        main
+            .content.content--mode-2
+                .container
+                    .content__header
+                        .button.button--prev Назад
+                        h1.title Расходный материал
+                        .button.button--next Подарить
+                    .content__inner
+                        .item
+                            picture
+                                img(src="images/svg/item.svg" alt="")
+                            p.item__price 1 500 ₽
+                            .price__amount
+                                span.plus +
+                                span.number 1
+                                span.minus -
+                            .content__text
+                                p Тут будет описание продукта или товара. Помощь детям в клиниках. Это основной проект нашего фонда. У нас налажено сотрудничество и заключены договоры с целым рядом клиник, как столичных, так и региональных. И на поступающие пожертвования наш фонд покупает лекарства, расходные материалы.
+        footer.main-footer.main-footer--mode
+            .container.container--mode
+                .main-footer__text
+                    p Благотворительный фонд «Подари жизнь», 119048, г.Москва, ул.Доватора, д.13, подъезд 2А
+                    p donate@podari-zhizn.ru, +7 (495) 995-31-05,  +7 (495) 995-31-06
+                .main-footer__bottom
+                    ul.social
+                        li.fb
+                            a(href="")
+                                img(src="images/svg/social-fb.svg" alt="")
+                        li.tw
+                            a(href="")
+                                img(src="images/svg/social-tw.svg" alt="")
+                        li.inst
+                            a(href="")
+                                img(src="images/svg/social-inst.svg" alt="")
+                    a(href="").link Основной сайт
+
+        include modules/nav-bottom.pug
+
+
+
+
+        //- include modules/menu-mobile.pug
+        include modules/script.pug

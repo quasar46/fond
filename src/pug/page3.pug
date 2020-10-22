@@ -1,0 +1,32 @@
+doctype html
+html(lang="ru")
+    head
+        include modules/head.pug
+    body
+        include modules/header.pug
+
+        main
+            .content
+                .container
+                    .content__header
+                        .button.button--prev Назад
+                        h1.title Пожалуйста, введите e-mail
+                        .button.button--next Помочь
+                    .content__inner
+                        form(action="get").form
+                            ul
+                                li.form__email
+                                    input(type="email" placeholder="Ваш e-mail")
+                                li.form__check
+                                    input(type="checkbox" id="check")
+                                    label(for="check") Подтвердите ваше согласие на условия оферты и обработку персональных данных
+
+
+
+
+
+
+        include modules/footer.pug
+        include modules/nav-bottom.pug
+        //- include modules/menu-mobile.pug
+        include modules/script.pug

@@ -1,0 +1,92 @@
+.index-header {
+    background-image: url("../images/svg/index-header.svg");
+    background-size: 1920px auto;
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding-top: 30px;
+    padding-bottom: 375px;
+    @media (max-width: 1024px) {
+        background-size: 1024px auto;
+        padding-bottom: 100px;
+    }
+    @media (max-width: 767px) {
+        background-image: url("../images/svg/index-header-mobile.svg");
+        background-size: 244% 302px;
+        padding-top: 20px;
+        margin-bottom: 60px;
+        padding-bottom: 0;
+    }
+}
+
+.index-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 227px;
+    picture {
+        flex: 1 0 auto;
+        max-width: 199px;
+        width: 100%;
+        height: 56px;
+        @media (max-width: 767px) {
+            max-width: 120px;
+            height: 30px;
+        }
+    }
+    a {
+        font-size: 24px;
+        font-family: $font-add;
+        color: #404040;
+        text-decoration: underline;
+        @media (max-width: 767px) {
+            font-size: 16px;
+        }
+    }
+    @media (max-width: 1024px) {
+        padding-bottom: 162px;
+    }
+    @media (max-width: 767px) {
+        padding-bottom: 287px;
+    }
+}
+
+.index-header__content {
+    display: flex;
+    flex-direction: column;
+    max-width: 520px;
+    width: 100%;
+    h1 {
+        font-size: 55px;
+        font-weight: 400;
+        font-family: $font-add;
+        margin-bottom: 15px;
+        @media (max-width: 767px) {
+            font-size: 28px;
+        }
+    }
+    p.text {
+        font-weight: 300;
+        margin-bottom: 29px;
+        @media (max-width: 767px) {
+            font-size: 15px;
+        }
+    }
+    a {
+        background-color: $color-red;
+        font-size: 24px;
+        font-family: $font-add;
+        color: $color-white;
+        text-decoration: none;
+        padding: 0 27px;
+        line-height: 51px;
+        align-self: flex-start;
+        @media (max-width: 767px) {
+            font-size: 18px;
+            line-height: 39px;
+            padding: 0 22px;
+        }
+    }
+    @media (max-width: 1024px) {
+        max-width: 320px;
+    }
+}

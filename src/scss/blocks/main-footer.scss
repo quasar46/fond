@@ -1,0 +1,145 @@
+.main-footer {
+    padding-top: 145px;
+    padding-bottom: 40px;
+    background-image: url("../images/svg/volna-footer.svg");
+    background-size: cover;
+    background-position: bottom;
+    // margin-top: 355px;
+    .container {
+        &::before {
+            content: "";
+            position: absolute;
+            top: -500px;
+            left: 0;
+            width: 266px;
+            height: 446px;
+            background-image: url("../images/svg/pic-cart.svg");
+            background-size: cover;
+            line-height: 1.4;
+
+            @media (max-width: 767px) {
+                display: none;
+            }
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            top: -450px;
+            right: 0;
+            width: 339px;
+            height: 390px;
+            background-image: url("../images/svg/pic-people.svg");
+            background-size: cover;
+            @media (max-width: 767px) {
+                width: 168px;
+                height: 197px;
+                top: -215px;
+                right: 10px;
+            }
+        }
+        &--mode-2 {
+            &::before {
+                content: "";
+                position: absolute;
+                top: -500px;
+                left: 0;
+                width: 235px;
+                height: 418px;
+                background-image: url("../images/svg/girl-left.svg");
+                background-size: cover;
+                @media (max-width: 992px) {
+                    display: none;
+                }
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                top: -520px;
+                right: 0;
+                width: 251px;
+                height: 432px;
+                background-image: url("../images/svg/girl-right.svg");
+                background-size: cover;
+                @media (max-width: 992px) {
+                    display: none;
+                }
+            }
+        }
+        &--mode {
+            &::before {
+                display: none;
+            }
+            &::after {
+                display: none;
+            }
+        }
+    }
+    &--girls {
+        @media (max-width: 767px) {
+            margin-top: 264px;
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 292px;
+                height: 288px;
+                background-image: url("../images/svg/girls.svg");
+                background-size: cover;
+                bottom: 85%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+    &--mode {
+        margin-top: 0;
+    }
+    @media (max-width: 767px) {
+        background-image: url("../images/svg/volna-footer-mobile.svg");
+        background-size: 230% 250px;
+        background-repeat: no-repeat;
+        // margin-top: 189px;
+        padding-top: 58px;
+        padding-bottom: 40px;
+        margin-bottom: 50px;
+        background-position: top;
+    }
+}
+
+.main-footer__text {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-family: $font-add;
+    p {
+        margin-bottom: 10px;
+        margin-bottom: 0;
+        line-height: 1.4;
+    }
+    i.br {
+        @media (max-width: 767px) {
+            display: block;
+        }
+    }
+    @media (max-width: 767px) {
+        font-size: 16px;
+    }
+}
+
+.main-footer__bottom {
+    display: flex;
+    justify-content: center;
+    a.link {
+        display: none;
+        font-size: 16px;
+        font-family: $font-add;
+        color: $color-text;
+        @media (max-width: 767px) {
+            display: inline;
+        }
+    }
+    @media (max-width: 767px) {
+        justify-content: space-between;
+        align-items: center;
+    }
+}

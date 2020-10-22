@@ -1,0 +1,53 @@
+doctype html
+html(lang="ru")
+    head
+        include modules/head.pug
+    body
+        include modules/header.pug
+
+        main
+            .content.content--confeti
+                .container
+                    .content__header.content__header--mode
+                        h1.title Благодарим Вас за подарок!
+                    .content__inner
+                        .thank
+                            picture
+                                img(src="images/item.png" alt="")
+
+                            .thank__content
+                                p.text Тут будет описание благодарности. Помощь детям в клиниках. Это основной проект нашего фонда. У нас налажено сотрудничество и заключены договоры с целым рядом клиник, как столичных. 
+                                p.text.text--mode Вы можете поделиться своим достиженением <br> в социальных сетях
+                                ul.social.social--mode
+                                    li.fb
+                                        a(href="")
+                                            img(src="images/svg/social-fb-red.svg" alt="")
+                                    li.tw
+                                        a(href="")
+                                            img(src="images/svg/social-vk-red.svg" alt="")
+                                    li.inst
+                                        a(href="")
+                                            img(src="images/svg/social-ok-red.svg" alt="")
+
+        footer.main-footer.main-footer--girls
+            .container.container--mode-2
+                .main-footer__text
+                    p Благотворительный фонд «Подари жизнь», 119048, г.Москва, ул.Доватора, д.13, подъезд 2А
+                    p donate@podari-zhizn.ru, +7 (495) 995-31-05,  +7 (495) 995-31-06
+                .main-footer__bottom
+                    ul.social
+                        li.fb
+                            a(href="")
+                                img(src="images/svg/social-fb.svg" alt="")
+                        li.tw
+                            a(href="")
+                                img(src="images/svg/social-tw.svg" alt="")
+                        li.inst
+                            a(href="")
+                                img(src="images/svg/social-inst.svg" alt="")
+                    a(href="").link Основной сайт
+
+
+        include modules/nav-bottom.pug
+        //- include modules/menu-mobile.pug
+        include modules/script.pug

@@ -1,0 +1,154 @@
+.content {
+    margin-bottom: 400px;
+    &--mode {
+        margin-bottom: 350px;
+    }
+    &--mode-2 {
+        margin-bottom: 0;
+    }
+    &--confeti {
+        margin-bottom: 105px;
+        @media(max-width: 768px) {
+            margin-bottom: 300px;
+        }
+    }
+    @media (max-width: 767px) {
+        margin-bottom: 0;
+    }
+}
+
+.content__header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 48px;
+    h1 {
+        font-family: $font-add;
+        font-size: 45px;
+        font-weight: 400;
+        max-width: 520px;
+        text-align: center;
+        @media (max-width: 767px) {
+            font-size: 26px;
+        }
+    }
+    .button {
+        position: relative;
+        font-size: 24px;
+        font-family: $font-add;
+        color: $color-white;
+        background-color: $color-red;
+        line-height: 51px;
+        text-align: center;
+        padding: 0 40px;
+        &.disabled {
+            opacity: 0.4;
+        }
+        &--prev {
+            margin-left: 66px;
+            &::before {
+                content: "";
+                position: absolute;
+                left: -66px;
+                top: 0;
+                width: 51px;
+                height: 100%;
+                background-image: url("../images/svg/btn-prev.svg");
+                background-size: cover;
+            }
+        }
+        &--next {
+            margin-right: 66px;
+            &::before {
+                content: "";
+                position: absolute;
+                right: -66px;
+                top: 0;
+                width: 51px;
+                height: 100%;
+                background-image: url("../images/svg/btn-next.svg");
+                background-size: cover;
+            }
+        }
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+    &--mode {
+        justify-content: center;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-image: url("../images/svg/flag-left.svg");
+            width: 285px;
+            height: 332px;
+            background-repeat: no-repeat;
+            @media (max-width: 767px) {
+                display: none;
+            }
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background-image: url("../images/svg/flag-right.svg");
+            width: 282px;
+            height: 274px;
+            background-repeat: no-repeat;
+            @media (max-width: 767px) {
+                display: none;
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+}
+
+.content__inner {
+    max-width: 589px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    z-index: 1;
+    position: relative;
+}
+
+.content__text {
+    font-weight: 300;
+    @media (max-width: 320px) {
+        font-size: 15px;
+    }
+}
+
+.content__buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    button {
+        background-color: $color-red;
+        border: none;
+        color: $color-white;
+        font-size: 24px;
+        font-family: $font-add;
+        line-height: 51px;
+        padding: 0 21px;
+        white-space: nowrap;
+        &:first-child {
+            margin-right: 30px;
+        }
+        @media (max-width: 767px) {
+            font-size: 18px;
+            padding: 0 17px;
+            line-height: 39px;
+        }
+    }
+    @media (max-width: 767px) {
+        margin-bottom: 190px;
+    }
+}

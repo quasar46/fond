@@ -1,0 +1,51 @@
+.item {
+    display: flex;
+    flex-direction: column;
+    picture {
+        max-width: 320px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        @media(max-width: 1024px) {
+            margin-bottom: 22px;
+        }
+        @media (max-width: 767px) {
+            max-width: 162px;
+        }
+    }
+    @media (max-width: 767px) {
+        margin-bottom: 40px;
+    }
+}
+
+.item__price {
+    font-size: 35px;
+    font-family: $font-add;
+    margin-bottom: 25px;
+
+    @media (max-width: 767px) {
+        font-size: 30px;
+    }
+}
+
+.price__amount {
+    display: flex;
+    margin-bottom: 34px;
+    .plus,
+    .minus {
+        max-width: 25px;
+        flex: 1 0 auto;
+        font-size: 28px;
+        color: $color-white;
+        text-align: center;
+        background-image: url("../images/svg/square.svg");
+        background-size: cover;
+    }
+    .number {
+        font-size: 30px;
+        margin: 0 15px;
+        @media (max-width: 320px) {
+            font-size: 26px;
+        }
+    }
+}

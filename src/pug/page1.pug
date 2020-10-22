@@ -1,0 +1,30 @@
+doctype html
+html(lang="ru")
+    head
+        include modules/head.pug
+    body
+        include modules/header.pug
+
+        main
+            .content.content--mode
+                .container
+                    .content__header
+                        .button.button--prev Назад
+                        h1.title Вы можете выбрать открытку бесплатно
+                        .button.button--next.disabled Выбор
+                    .content__inner
+                        .content__text
+                            p Тут будет описание за выбор открытки. Помощь детям в клиниках. Это основной проект нашего фонда. У нас налажено сотрудничество и заключены договоры с целым рядом клиник, как столичных, так и региональных. 
+                            p И на поступающие пожертвования наш фонд покупает лекарства, расходные материалы, реактивы или медицинское оборудование для всей клиники или ее отделения.
+                        .content__buttons
+                            button Выбрать открытку
+                            button Отказаться
+
+
+
+
+
+        include modules/footer.pug
+        include modules/nav-bottom.pug
+        //- include modules/menu-mobile.pug
+        include modules/script.pug
