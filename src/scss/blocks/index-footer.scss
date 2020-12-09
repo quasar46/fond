@@ -14,7 +14,7 @@
             height: 195px;
             background-image: url("../images/svg/sharik-green.svg");
             background-size: cover;
-            @media (max-width: 1024px) {
+            @media (max-width: 1025px) {
                 display: none;
             }
         }
@@ -27,12 +27,12 @@
             height: 172px;
             background-image: url("../images/svg/sharik-yellow.svg");
             background-size: cover;
-            @media (max-width: 1024px) {
+            @media (max-width: 1025px) {
                 display: none;
             }
         }
     }
-    h1.title {
+    .title {
         font-size: 45px;
         font-weight: 400;
         font-family: $font-add;
@@ -52,31 +52,32 @@
             &.square2 {
                 background-image: url("../images/svg/square2.svg");
             }
-            @media (max-width: 767px) {
+            @media (max-width: 769px) {
                 font-size: 26px;
                 width: 39px;
                 margin-bottom: 5px;
+                line-height: 38px;
             }
         }
         i.br {
-            @media (max-width: 767px) {
+            @media (max-width: 769px) {
                 display: block;
             }
         }
-        @media (max-width: 1024px) {
+        @media (max-width: 1025px) {
             padding-bottom: 500px;
         }
-        @media (max-width: 767px) {
+        @media (max-width: 769px) {
             font-size: 26px;
             padding-bottom: 229px;
         }
     }
-    @media (max-width: 1024px) {
+    @media (max-width: 1025px) {
         background-image: url("../images/svg/index-footer-1024.svg");
         background-size: 1024px auto;
         padding-top: 110px;
     }
-    @media (max-width: 767px) {
+    @media (max-width: 769px) {
         background-image: url("../images/svg/index-footer-mobile.svg");
         background-size: 265% 386px;
         background-position: center bottom;
@@ -98,11 +99,11 @@
             margin-bottom: 29px;
         }
         i.br {
-            @media (max-width: 767px) {
+            @media (max-width: 769px) {
                 display: block;
             }
         }
-        @media (max-width: 767px) {
+        @media (max-width: 769px) {
             font-size: 15px;
             margin-bottom: 0;
         }
@@ -117,11 +118,11 @@
         color: $color-text;
         font-size: 16px;
         font-family: $font-add;
-        @media (max-width: 767px) {
+        @media (max-width: 769px) {
             display: block;
         }
     }
-    @media (max-width: 767px) {
+    @media (max-width: 769px) {
         display: flex;
         justify-content: space-between;
         align-items: center;

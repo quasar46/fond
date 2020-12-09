@@ -37,7 +37,7 @@ body {
 	flex-direction: column;
 	// height: 100vh;
 	overflow-x: hidden;
-	@media (max-width: 767px) {
+	@media (max-width: 769px) {
 		font-size: 15px;
 	}
 }
@@ -48,7 +48,7 @@ body {
 	width: 100%;
 	padding: 0 15px;
 	margin: 0 auto;
-	@media(max-width: 767px) {
+	@media(max-width: 769px) {
 		max-width: 320px;
 		// padding: 0;
 	}

@@ -1,9 +1,9 @@
 .gifts {
     padding-bottom: 237px;
-    @media(max-width: 1024px) {
+    @media(max-width: 1025px) {
         padding-bottom: 70px;
     }
-    @media (max-width: 767px) {
+    @media (max-width: 769px) {
         order: 1;
         padding-bottom: 70px;
     }
@@ -12,14 +12,15 @@
 .gifts__wrapper {
     display: flex;
     flex-direction: column;
-    h1 {
+    .title {
         font-size: 45px;
         font-family: $font-add;
         font-weight: 400;
         margin-bottom: 42px;
         text-align: center;
-        @media (max-width: 767px) {
+        @media (max-width: 769px) {
             font-size: 26px;
+            margin-bottom: 30px;
         }
     }
     a#show-more {
@@ -31,9 +32,10 @@
         padding: 0 40px;
         text-decoration: none;
         align-self: center;
-        @media (max-width: 767px) {
+        @media (max-width: 769px) {
             font-size: 18px;
             line-height: 39px;
+            padding: 0 30px;
         }
     }
 }
@@ -54,7 +56,7 @@
             img {
                 object-fit: contain;
             }
-            @media (max-width: 767px) {
+            @media (max-width: 769px) {
                 max-width: 90px;
                 margin-bottom: 14px;
             }
@@ -64,10 +66,10 @@
             font-weight: 300;
             text-align: center;
             margin-bottom: 14px;
-            @media(max-width: 1024px) {
+            @media(max-width: 1025px) {
                 margin-bottom: 8px;
             }
-            @media (max-width: 767px) {
+            @media (max-width: 769px) {
                 font-size: 15px;
                 margin-bottom: 9px;
             }
@@ -75,15 +77,16 @@
         span.price {
             font-family: $font-add;
             font-size: 24px;
-            @media (max-width: 767px) {
+            @media (max-width: 769px) {
                 font-size: 20px;
             }
         }
-        @media(max-width: 1024px) {
+        @media(max-width: 1025px) {
             margin-bottom: 35px;
         }
-        @media (max-width: 767px) {
+        @media (max-width: 769px) {
             width: calc(100% / 2);
+            margin-bottom: 30px;
         }
     }
 }

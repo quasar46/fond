@@ -17,7 +17,7 @@
             background-size: cover;
             line-height: 1.4;
 
-            @media (max-width: 767px) {
+            @media (max-width: 769px) {
                 display: none;
             }
         }
@@ -30,7 +30,7 @@
             height: 390px;
             background-image: url("../images/svg/pic-people.svg");
             background-size: cover;
-            @media (max-width: 767px) {
+            @media (max-width: 769px) {
                 width: 168px;
                 height: 197px;
                 top: -215px;
@@ -75,7 +75,7 @@
         }
     }
     &--girls {
-        @media (max-width: 767px) {
+        @media (max-width: 769px) {
             margin-top: 264px;
             position: relative;
             &::before {
@@ -94,14 +94,14 @@
     &--mode {
         margin-top: 0;
     }
-    @media (max-width: 767px) {
+    @media (max-width: 769px) {
         background-image: url("../images/svg/volna-footer-mobile.svg");
-        background-size: 230% 250px;
+        background-size: 768px auto;
         background-repeat: no-repeat;
         // margin-top: 189px;
         padding-top: 58px;
-        padding-bottom: 40px;
-        margin-bottom: 50px;
+        padding-bottom: 0;
+        margin-bottom: 65px;
         background-position: top;
     }
 }
@@ -117,11 +117,11 @@
         line-height: 1.4;
     }
     i.br {
-        @media (max-width: 767px) {
+        @media (max-width: 769px) {
             display: block;
         }
     }
-    @media (max-width: 767px) {
+    @media (max-width: 769px) {
         font-size: 16px;
     }
 }
@@ -134,11 +134,11 @@
         font-size: 16px;
         font-family: $font-add;
         color: $color-text;
-        @media (max-width: 767px) {
+        @media (max-width: 769px) {
             display: inline;
         }
     }
-    @media (max-width: 767px) {
+    @media (max-width: 769px) {
         justify-content: space-between;
         align-items: center;
     }

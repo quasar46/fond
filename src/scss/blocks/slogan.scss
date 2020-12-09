@@ -1,18 +1,18 @@
 .slogan {
     margin-bottom: 64px;
-    h1 {
+    .title {
         font-size: 45px;
         font-family: $font-add;
         font-weight: 400;
         text-align: center;
-        @media (max-width: 767px) {
+        @media (max-width: 769px) {
             font-size: 26px;
         }
     }
-    @media(max-width: 1024px) {
+    @media(max-width: 1025px) {
         margin-bottom: 10px;
     }
-    @media (max-width: 767px) {
+    @media (max-width: 769px) {
         order: 2;
     }
 }
